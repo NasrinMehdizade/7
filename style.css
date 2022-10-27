@@ -148,6 +148,16 @@ body {
     outline: none;
     border: 1px solid #e9e9e9;
 }
+.left .background {
+    width: 300px;
+    height: 10rem;
+    background-image: url("./bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 10rem;
+    left: 9rem;
+}
 @media screen and (max-width: 768px) {
     body {
         flex-direction: column;
@@ -161,5 +171,6 @@ body {
         width: 90%;
         margin: auto;
         margin-top: 5rem;
+        margin-bottom: 30px;
     }
 }
