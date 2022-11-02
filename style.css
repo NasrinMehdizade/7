@@ -9,7 +9,15 @@ body {
     flex-direction: row;
     gap: 20%;
 }
-.left {
+.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    clear: both;
+
+}
+.container .left {
     width: 30%;
     height: 100vh;
     background-image: url("./bg-main-desktop.png");
@@ -17,19 +25,19 @@ body {
     background-size: auto 100%;
     display: flex;
 }
-.right {
+.container .right {
     width: 30%;
     margin-top: 10rem;
 }
-.right .line-1 {
+.container .right .line-1 {
     display: flex;
     flex-direction: column;
 }
-.right .label-1 {
+.container .right .label-1 {
     font-size: 12px;
     margin-bottom: 7px;
 }
-.right .input-1 {
+.container .right .input-1 {
     outline: none;
     border: 1px solid #e9e9e9;
     border-radius: 8px;
@@ -37,21 +45,21 @@ body {
     cursor: pointer;
     margin-bottom: 25px;
 }
-.right .input-1::placeholder {
+.container .right .input-1::placeholder {
     color: #e9e9e9;
 }
-.right .input-1:focus {
+.container .right .input-1:focus {
     border: 1px solid #6c5b7b;
 }
-.right .line-2 {
+.container .right .line-2 {
     display: flex;
     flex-direction: column;
 }
-.right .label-2 {
+.container .right .label-2 {
     font-size: 12px;
     margin-bottom: 7px;
 }
-.right .input-2 {
+.container .right .input-2 {
     outline: none;
     border: 1px solid #e9e9e9;
     border-radius: 8px;
@@ -59,33 +67,33 @@ body {
     cursor: pointer;
     margin-bottom: 25px;
 }
-.right .input-2::placeholder {
+.container .right .input-2::placeholder {
     color: #e9e9e9;
 }
-.right .input-2:focus {
+.container .right .input-2:focus {
     border: 1px solid #6c5b7b;
 }
-.right .line-3 {
+.container .right .line-3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5%;
 }
-.right .line-3 .part-1 {
+.container .right .line-3 .part-1 {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-.right .line-3 .part-1 .line2 {
+.container .right .line-3 .part-1 .line2 {
     display: flex;
     flex-direction: row;
     gap: .4rem;
 } 
-.right .line-3 .part-1 .label-3 {
+.container .right .line-3 .part-1 .label-3 {
     font-size: 12px;
     margin-bottom: 7px;
 }
-.right .line-3 .part-1 .MM {
+.container .right .line-3 .part-1 .MM {
     width: 50%;
     outline: none;
     border: 1px solid #e9e9e9;
@@ -94,13 +102,13 @@ body {
     cursor: pointer;
     margin-bottom: 25px;
 }
-.right .line-3 .part-1 .MM::placeholder {
+.container .right .line-3 .part-1 .MM::placeholder {
     color: #e9e9e9;
 }
-.right .line-3 .part-1 .MM:focus {
+.container .right .line-3 .part-1 .MM:focus {
     border: 1px solid #6c5b7b;
 }
-.right .line-3 .part-1 .YY {
+.container .right .line-3 .part-1 .YY {
     width: 50%;
     outline: none;
     border: 1px solid #e9e9e9;
@@ -109,22 +117,22 @@ body {
     cursor: pointer;
     margin-bottom: 25px;
 }
-.right .line-3 .part-1 .YY::placeholder {
+.container .right .line-3 .part-1 .YY::placeholder {
     color: #e9e9e9;
 }
-.right .line-3 .part-1 .YY:focus {
+.container .right .line-3 .part-1 .YY:focus {
     border: 1px solid #6c5b7b;
 }
-.right .line-3 .part-2 {
+.container .right .line-3 .part-2 {
     width: 45%;
     display: flex;
     flex-direction: column;
 }
-.right .line-3 .part-2 .label-4 {
+.container .right .line-3 .part-2 .label-4 {
     font-size: 12px;
     margin-bottom: 7px;
 }
-.right .line-3 .part-2 .input-3 {
+.container .right .line-3 .part-2 .input-3 {
     outline: none;
     border: 1px solid #e9e9e9;
     border-radius: 8px;
@@ -132,13 +140,13 @@ body {
     cursor: pointer;
     margin-bottom: 25px;
 }
-.right .line-3 .part-2 .input-3::placeholder {
+.container .right .line-3 .part-2 .input-3::placeholder {
     color: #e9e9e9;
 }
-.right .line-3 .part-2 .input-3:focus {
+.container .right .line-3 .part-2 .input-3:focus {
     border: 1px solid #6c5b7b;
 }
-.right  button {
+.container .right  button {
     width: 100%;
     color: white;
     background-color: #220930;
@@ -149,61 +157,143 @@ body {
     outline: none;
     border: 1px solid #e9e9e9;
 }
- .left .boxes {
+.container .left .boxes {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
  } 
- .background {
-    width: 375px;
-    height: 100%;
+ .container .background {
+    width: 100%;
+    height: 38%;
     background-image: url("./bg-card-front.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: relative;
     max-width: 80%;
     z-index: 1;
     position: relative;
     top: 20%;
     left: 30%;
 }
- .background-2 {
+.container .background-2 {
     width: 375px;
-    height: 100%;
+    height: 38%;
     background-image: url("./bg-card-back.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: relative;
     max-width: 80%;
     z-index: 0;
     position: relative;
+    top: 81px;
     left: 50%
 }
 
 @media screen and (max-width: 768px) {
-    body {
+    .container body {
         flex-direction: column;
     }
-    .left {
+    .container .left {
         width: 100%;
-        height: 40vh;
+        height: 85vh;
         background-size: 100% auto;
     }
-    .right {
+    .container .right {
         width: 90%;
         margin: auto;
         margin-top: 5rem;
-        margin-bottom: 30px;
+        margin-bottom: 54px;
     }
-    .left .orginal {
+    .container .left .orginal {
         width: 100%;
         height: auto;
     }
-    .left .background {
-        left: 5%;
-        top: 15%;
+    .container .left .boxes {
+        width: 100%;
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -14px;
+        left: -157px;
+     } 
+     .container .left .background {
+        width: 60%;
+        height: 71vh;
+        top: 235px;
+        left: 257px;
+     }
+     .container .left .background-2 {
+        width: 60%;
+        height: 88vh;
+        top: -245px;
+        left: 50%;
+     }
+}
+@media screen and (max-width: 425px) {
+    .container .right {
+        margin-top: 7rem;
+        margin-bottom: 0;
     }
-    .left .background-2 {
-        top: -21.4rem;
-        left: 2rem;
+    .container .left {
+        width: 100%;
+        height: 45vh;
+        background-size: 100% auto;
     }
+    .container .left .background {
+        width: 65%;
+        height: 71vh;
+        top: 132px;
+        left: 196px;
+     }
+     .container .left .background-2 {
+        width: 65%;
+        height: 88vh;
+        top: -288px;
+        left: 251px;
+     }
+}
+@media screen and (max-width: 375px) {
+    .container .right {
+        margin-top: 9rem;
+        margin-bottom: 0;
+    }
+    .container .left {
+        width: 100%;
+        height: 45vh;
+        background-size: 100% auto;
+    }
+    .container .left .background {
+        width: 75%;
+        height: 71vh;
+        top: 141px;
+        left: 185px;
+     }
+    .container .left .background-2 {
+        width: 75%;
+        height: 88vh;
+        top: -280px;
+        left: 227px;
+     }
+}
+@media screen and (max-width: 320px) {
+    .container .right {
+        margin-top: 8rem;
+    }
+    .container .left {
+        height: 49vh;
+    }
+    .container .left .background {
+        width: 80%;
+        height: 90vh;
+        top: 161px;
+        left: 169px;
+     }
+     .container .left .background-2 {
+        width: 80%;
+        height: 88vh;
+        top: -296px;
+        left: 211px;
+     }
 }
