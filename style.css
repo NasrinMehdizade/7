@@ -144,13 +144,14 @@
     border: 1px solid #e9e9e9;
 }
 .container .left {
-    width: 20%;
+    width: 30%;
     height: 100vh;
     background-image: url("./bg-main-desktop.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
 }
 .background {
+    width: 290px;
     color: white;
     background-image: url("./bg-card-front.png");
     background-repeat: no-repeat;
@@ -203,7 +204,8 @@
     border-radius: 100%;
 } 
 .background-2 {
-    height: 70%;
+    width: 290px;
+    height: 20%;
     color: white;
     background-image: url("./bg-card-back.png");
     background-repeat: no-repeat;
